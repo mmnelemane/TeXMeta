@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+\tkzKiviatDiagram[scale=1.25,label distance=.5cm,
+        radial  = 5,
+        gap     = 1,  
+        lattice = 5]{Distance To UE,Latency,Jitter,Computational Power,Storage Capacity}
+\tkzKiviatLine[thick,color=blue,mark=none,
+               fill=blue!20,opacity=.5](10,10,10,8,8)
+\tkzKiviatLine[thick,color=darkgray,
+               fill=green!20,opacity=.5](2,2,2,4,4) 
+\tkzKiviatGrad[prefix=,unity=100,suffix=\ \texteuro](1)  
+\end{tikzpicture}
