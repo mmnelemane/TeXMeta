@@ -1,0 +1,46 @@
+\documentclass[../seminar.tex]{subfiles}
+
+\begin{document}
+	
+\begin{enumerate}
+\item Tuning Compute Performance
+\begin{flushleft}
+Through filtered scheduled available in Nova, OpenStack provides ability to tune Compute performance for intensive workloads that run within the Vms. This is done be enabling features such as CPU Pinning, Huge-Pages and NUMA-Affinity through configurations set in Nova during deployment. This will ensure that the selected nodes for provisioning or migrating the VM has the relevant features enabled. 
+\end{flushleft}
+
+\item Tuning Network I/O Performance
+\begin{flushleft}
+Network I/O performance is critical for the type of actions that NFV use-cases expect to perform on the VNFs. It demands fast inter-VM communication both within and across the compute nodes. 
+
+The network architecture of the OpenStack uses the separation concept proposed by SDN technologies. The control plane is usually implemented as part of the Network services that run on the OpenStack Controller or dedicated Network node as the case may be. The data plane can be implemented either through direct connection to the NICs or through bridging allowing for multiple Vms to be hosted on a single node. We discuss the following approaches for data plane methods:
+		
+\begin{itemize}
+\item Linux Bridge
+\begin{flushleft}
+This is the traditional Linux networking implementation provided by linux-utils and provides a simple interface to provide multiple interfaces on a single NIC. The linux bridge is inherently slow and the limits on the number of interfaces make it non-viable for scalability. A typical connectivity in a Linux bridge network is as in the figure below [5].
+				
+\includegraphics[width=0.9\textwidth]{linux_bridge_provider}
+				
+\end{flushleft}
+\item OpenvSwitch
+\begin{flushleft}
+OpenvSwitch provides a virtual switching mechanism and is based on OpenFlow Protocol. 
+				
+\includegraphics[width=0.9\textwidth]{ovs_provider}
+				
+The multiple levels of bridging in the OpenvSwitch based architecture creates performance bottlenecks that hinder the use-cases for NFV. Hence advanced data plane acceleration technologies should be utilized. The key data plane acceleration methods are listed below.
+	
+\begin{itemize}
+\item DPDK - Data Plane Development Kit
+\begin{itemize}
+\item DPDK
+\end{itemize}
+\end{itemize} 
+\end{flushleft}
+				
+\end{itemize}
+\end{flushleft}
+\end{enumerate}
+	
+	
+\end{document}
