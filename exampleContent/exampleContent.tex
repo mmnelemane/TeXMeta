@@ -23,7 +23,32 @@ A&B&C\\
 \end{longtable}
 
 \subsection{MCC vs MEC}
+
+\begin{longtable}[H]{|p{0.2\textwidth}|p{0.2\textwidth}|p{0.2\textwidth}|}
+\hline\hline
+	Technical Aspect&MCC&Edge Computing&MCC Weight&MEC Weight\\
+\hline\hline
+\hline
+Deployment&Centralized&Distributed&Not Applicable&NotApplicable\\
+\hline
+Distance To the UE&High&Low&10.0&2.0\\
+\hline
+Latency&High&Low&10.0&2.0\\
+\hline
+Jitter&High&Low&10.0&2.0\\
+\hline
+Computational Power&Ample&Limited&8.0&4.0\\
+\hline
+Storage Capacity&ample&Limited&8.0&4.0\\
+\hline
+\hline\hline
+
+\caption{Table 1}
+\label{tab:tab1}
+\end{longtable}
+
 \begin{tikzpicture}
+
 \tkzKiviatDiagram[scale=0.5,label distance=3cm,radial=12,gap=1,lattice=12]
 	{Distance To UE,Latency,Jitter,Computational Power,Storage Capacity}
 \tkzKiviatLine[ultra thick,color=green,mark=ball,mark size=4pt,
