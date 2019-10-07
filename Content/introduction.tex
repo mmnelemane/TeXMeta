@@ -5,7 +5,7 @@ The next generation applications expected to use 5G.5G promises enhanced bandwid
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.9\textwidth]{5g_pillars}
+	\includegraphics[width=9cm,height=13cm]{5g_pillars}
 	\label{fig:figure1}
 	\caption{Pillars of 5G Technology}
 \end{figure}
@@ -66,18 +66,12 @@ Storage Capacity&ample&Limited&8.0&4.0\\
 \hline
 \hline\hline
 
-\caption{Table 1}
+\caption{A Weighted comparison of MCC and MEC}
 \label{tab:tab1}
 \end{longtable}
 
-\begin{tikzpicture}
-
-\tkzKiviatDiagram[scale=0.5,label distance=3cm,radial=12,gap=1,lattice=12]
-	{Distance To UE,Latency,Jitter,Computational Power,Storage Capacity}
-\tkzKiviatLine[ultra thick,color=green,mark=ball,mark size=4pt,
-               fill=green!20,opacity=.5](10.0,10.0,10.0,8.0,8.0)
-\tkzKiviatLine[ultra thick,color=red,mark=ball,mark size=4pt,
-               fill=red!20,opacity=.5](2.0,2.0,2.0,4.0,4.0) 
-\tkzKiviatGrad[prefix=,unity=1](1)  
-\end{tikzpicture}
-
+\begin{figure}
+	\scaletikzimage{mcc_mec}{MCC-vs-MEC}{img:mcc_mec}{0.9}
+	\label{fig:figure2}
+	\caption{A weighted comparison of MCC and MEC}
+\end{figure}
