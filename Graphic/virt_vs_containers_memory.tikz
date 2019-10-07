@@ -1,9 +1,0 @@
-\begin{tikzpicture}
-\tkzKiviatDiagram[scale=1.0,label distance=3cm,radial=10,gap=0.5,lattice=10]
-	{Kernel Compilation,MySQL Image,Memory Intensive,CPU Intensive,Disk Intensive}
-\tkzKiviatLine[ultra thick,color=green,mark=ball,mark size=4pt,
-               fill=green!20,opacity=0.5](4.0,1.68,4.0,4.0,4.0)
-\tkzKiviatLine[ultra thick,color=red,mark=ball,mark size=4pt,
-               fill=red!20,opacity=0.5](0.42,0.37,4.0,1.7,2.2)
-\tkzKiviatGrad[prefix=,unity=0.5](0.5)
-\end{tikzpicture}
