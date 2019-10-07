@@ -189,7 +189,8 @@ Abgabedatum:\> \@date\\
 \scalebox{#4}{%
 \IfFileExists{graphic/#1.tikz}{\input{graphic/#1.tikz}}{
 \IfFileExists{\meta/Graphic/mcc_mec.tikz}{\input{\meta/Graphic/mcc_mec.tikz}}{%
-\IfFileExists{\meta/Graphic/vm_containers.tikz}{\input{\meta/Graphic/vm_containers.tikz}}{%
+\IfFileExists{\meta/Graphic/virt_vs_containers_memory.tikz}{\input{\meta/Graphic/virt_vs_containers_memory.tikz}}{%
+\IfFileExists{\meta/Graphic/virt_vs_containers_time.tikz}{\input{\meta/Graphic/virt_vs_containers_time.tikz}}{%
 \colorbox{red}{Put your tikz file in the \texttt{graphic} folder}%
 }}}%
 \caption{#2}%
